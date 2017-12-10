@@ -7,9 +7,10 @@ import { NavigatorTabOne } from './tabOne/navigationConfiguration'
 import { NavigatorTabTwo } from './tabTwo/navigationConfiguration'
 import { NavigatorTabThree } from './tabThree/navigationConfiguration'
 import { TabBar, tabBarReducer } from './tabBar/navigationConfiguration'
+import ScreenTracking from './ScreenTracking'
 // Middleware
 const middleware = () => {
-  return applyMiddleware(logger)
+  return applyMiddleware(ScreenTracking, logger)
 }
 export default createStore(
   combineReducers({
