@@ -24,12 +24,12 @@ const ScreenTracking = ({ getState }) => next => (action) => {
     return next(action);
   }
 
-  const currentScreen = getCurrentRouteName(getState().nav);
+  const currentScreen = getCurrentRouteName(getState().tabOne);
   const result = next(action);
-  const nextScreen = getCurrentRouteName(getState().nav);
+  const nextScreen = getCurrentRouteName(getState().tabOne);
   if (nextScreen !== currentScreen) {
     // the line below uses the Google Analytics tracker
-    // change the tracker here to use other Mobile analytics SDK.
+    // Change tracker to use any other Mobile analytics SDK.
     tracker.trackScreenView(nextScreen);
   }
   return result;

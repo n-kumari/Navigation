@@ -7,7 +7,6 @@ const routeConfiguration = {
   TabTwoScreenOne: { screen: TabTwoScreenOne },
   TabTwoScreenTwo: { screen: TabTwoScreenTwo },
 }
-// going to disable the header for now
 const stackNavigatorConfiguration = {
   headerMode: 'none',
   initialRouteName: 'TabTwoScreenOne'

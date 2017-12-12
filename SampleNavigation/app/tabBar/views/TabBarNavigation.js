@@ -1,4 +1,5 @@
 'use strict'
+// Code from https://codeburst.io/react-navigation-with-complete-redux-state-management-tab-bar-and-multiple-navigators-ed30a69d9a4d
 // React
 import React from 'react'
 // Navigation

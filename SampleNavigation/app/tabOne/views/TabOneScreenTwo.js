@@ -16,11 +16,21 @@ export default class TabOneScreenTwo extends React.Component {
           style={{
             padding:20,
             borderRadius:20,
-            backgroundColor:'purple',
+            backgroundColor:'white',
             marginTop:20
           }}>
           <Text>{'Go back a screen'}</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+        onPress={ () => this.props.navigation.goBack() }
+        style={{
+          padding:20,
+          borderRadius:20,
+          backgroundColor:'white',
+          marginTop:20
+        }}>
+        <Text>{'Go back a screen again'}</Text>
+      </TouchableOpacity>
 </View>
     )
   }
